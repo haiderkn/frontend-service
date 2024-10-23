@@ -1,6 +1,8 @@
 services:
-  frontend:
+  app:
+    image: haider57/frontend-service:23.10.2024
     build: .
+    container_name: frontend
     ports:
       - "4173:4173"
     environment:
